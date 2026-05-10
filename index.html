@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayachi Samyal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Shippori+Mincho+B1:wght@400;800&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <span class="nav-name">綾智 <em>Ayachi</em></span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#japan">Japan</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <!-- sun/moon SVG drawn in CSS, no external asset -->
+      <span class="toggle-icon"></span>
+    </button>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+       IMAGES NEEDED:
+         assets/images/calligraphy.jpg  ← your shodō photo
+  ============================================================ -->
+  <section class="hero" id="hero">
+
+    <div class="hero-bg">
+      <!--
+        DROP YOUR SHODŌ CALLIGRAPHY PHOTO HERE:
+        File: assets/images/calligraphy.jpg
+        Recommended: full portrait crop, high-res
+      -->
+      <img
+        src="assets/images/calligraphy.jpg"
+        alt="Ayachi's shodō calligraphy from Japan"
+        class="hero-calligraphy"
+        loading="eager"
+      />
+      <div class="hero-bg-tint"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-kicker mono">書道 — Yokohama Hiranuma High School, 2021</p>
+      <h1 class="hero-name">Ayachi<br /><em>Samyal</em></h1>
+      <p class="hero-tagline">
+        Literary technologist. Ink artist. ML researcher.<br />
+        <!-- EDIT THIS LINE — this is your one-liner that opens your world -->
+        I wrote this the year Japan changed me.
+      </p>
+      <div class="hero-roles mono">
+        <span>Author</span>
+        <span class="sep">·</span>
+        <span>Illustrator</span>
+        <span class="sep">·</span>
+        <span>CS Researcher</span>
+        <span class="sep">·</span>
+        <span>Exchange Scholar</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT — scrapbook layout
+       IMAGES NEEDED:
+         assets/images/polaroid-1.jpg  ← any personal photo you like
+         assets/images/polaroid-2.jpg
+         assets/images/polaroid-3.jpg
+         assets/images/portrait.jpg    ← your face / fav photo of yourself
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="about-inner">
+
+      <div class="about-text">
+        <span class="chapter-label mono">Chapter 01</span>
+        <h2 class="section-heading">Who I Am</h2>
+        <p class="about-body">
+          <!-- EDIT — write in your voice, not resume-speak -->
+          I've been writing since I was ten and I haven't stopped. I spent ten months
+          in Japan on the Asia Kakehashi Project, came back fluent in a different kind
+          of attention, and channelled it into code, ink, and obsessive research on problems
+          nobody else wants to touch.
+        </p>
+        <p class="about-body">
+          <!-- EDIT -->
+          Third-year CSE at Amity University Punjab. Published author. Manga-influenced
+          illustrator. Somewhere between Dostoevsky and machine learning, I found the
+          intersection I want to live in forever.
+        </p>
+        <ul class="about-facts mono">
+          <li><!-- EDIT --> 5 languages</li>
+          <li><!-- EDIT --> Published at age 10</li>
+          <li><!-- EDIT --> 400K+ Pinterest reach</li>
+          <li><!-- EDIT --> Asia Kakehashi Scholar 2021</li>
+          <li><!-- EDIT --> International theatre prize, 2019</li>
+        </ul>
+      </div>
+
+      <div class="about-scrapbook">
+
+        <!-- Portrait -->
+        <div class="polaroid polaroid--portrait">
+          <!--
+            DROP YOUR PORTRAIT HERE:
+            File: assets/images/portrait.jpg
+          -->
+          <div class="polaroid-img-wrap">
+            <img src="assets/images/portrait.jpg" alt="Ayachi" class="polaroid-img" />
+          </div>
+          <!-- EDIT — write on the polaroid like a marker caption -->
+          <p class="polaroid-caption handwritten">that's me :)</p>
+        </div>
+
+        <!-- Polaroid 1 -->
+        <div class="polaroid polaroid--tilt-left">
+          <!--
+            DROP A PHOTO HERE (Japan, your art, anything personal):
+            File: assets/images/polaroid-1.jpg
+          -->
+          <div class="polaroid-img-wrap">
+            <img src="assets/images/polaroid-1.jpg" alt="" class="polaroid-img" />
+          </div>
+          <!-- EDIT — what would you write with a marker on this photo? -->
+          <p class="polaroid-caption handwritten">Yokohama, 2021 ♡</p>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <div class="polaroid polaroid--tilt-right">
+          <!--
+            DROP A PHOTO HERE:
+            File: assets/images/polaroid-2.jpg
+          -->
+          <div class="polaroid-img-wrap">
+            <img src="assets/images/polaroid-2.jpg" alt="" class="polaroid-img" />
+          </div>
+          <!-- EDIT -->
+          <p class="polaroid-caption handwritten">shodō class ☁</p>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="polaroid polaroid--tilt-none">
+          <!--
+            DROP A PHOTO HERE:
+            File: assets/images/polaroid-3.jpg
+          -->
+          <div class="polaroid-img-wrap">
+            <img src="assets/images/polaroid-3.jpg" alt="" class="polaroid-img" />
+          </div>
+          <!-- EDIT -->
+          <p class="polaroid-caption handwritten">somewhere good</p>
+        </div>
+
+        <!-- Red hanko stamp — pure CSS, no image needed -->
+        <div class="hanko" aria-hidden="true">合格</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WORK — specimen / artifact layout
+  ============================================================ -->
+  <section class="work" id="work">
+    <div class="work-inner">
+      <span class="chapter-label mono">Chapter 02</span>
+      <h2 class="section-heading">Work</h2>
+
+      <div class="work-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-tag mono">ML · Research</div>
+          <h3 class="project-title">
+            <!-- EDIT -->
+            Groundwater Fluoride Risk Framework
+          </h3>
+          <p class="project-desc">
+            <!-- EDIT -->
+            A socioeconomic vulnerability-weighted ML model for fluoride contamination
+            in rural India. Built for the people nobody's building for. IEEE SiMPaCT 2026.
+          </p>
+          <div class="project-meta mono">
+            <!-- EDIT — tech stack -->
+            <span>Python</span><span>·</span><span>Random Forest</span><span>·</span><span>CGWB Data</span>
+          </div>
+          <a href="#" class="project-link mono">
+            <!-- EDIT — link to paper / repo / demo -->
+            View Paper →
+          </a>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-tag mono">ML · Minor Project</div>
+          <h3 class="project-title">
+            <!-- EDIT -->
+            Smart Waste Classifier
+          </h3>
+          <p class="project-desc">
+            <!-- EDIT -->
+            Multilingual waste classification — Hindi, Punjabi, English — with audio
+            output for low-literacy users. 69.3% test accuracy on TrashNet subset.
+          </p>
+          <div class="project-meta mono">
+            <span>Python</span><span>·</span><span>Random Forest</span><span>·</span><span>TrashNet</span>
+          </div>
+          <a href="#" class="project-link mono">
+            <!-- EDIT -->
+            View Project →
+          </a>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-tag mono">Design · Pitch</div>
+          <h3 class="project-title">
+            <!-- EDIT -->
+            NeuroGaze — EEG Communication System
+          </h3>
+          <p class="project-desc">
+            <!-- EDIT -->
+            Hands-free communication device for paralyzed patients. Pitch deck for
+            Team VEDA. Newton's Law aesthetic DNA — sand, teal, gold.
+          </p>
+          <div class="project-meta mono">
+            <span>pptxgenjs</span><span>·</span><span>BCI</span><span>·</span><span>UX Design</span>
+          </div>
+          <a href="#" class="project-link mono">
+            <!-- EDIT -->
+            View Deck →
+          </a>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card">
+          <div class="project-tag mono">Creative Dev</div>
+          <h3 class="project-title">
+            <!-- EDIT -->
+            Kino-Typed · Omikuji Generator
+          </h3>
+          <p class="project-desc">
+            <!-- EDIT -->
+            Two web toys: a vintage typewriter letter-writing app (with shiba animation)
+            and an Omikuji fortune slip generator. Because why not.
+          </p>
+          <div class="project-meta mono">
+            <span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>Vanilla JS</span>
+          </div>
+          <a href="#" class="project-link mono">
+            <!-- EDIT -->
+            Try It →
+          </a>
+        </article>
+
+        <!-- ADD MORE PROJECTS — copy the <article> block above -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       JAPAN — horizontal film strip
+       IMAGES NEEDED:
+         assets/images/japan-1.jpg  through  japan-5.jpg
+         (any 5 photos from your exchange year)
+  ============================================================ -->
+  <section class="japan" id="japan">
+    <div class="japan-header">
+      <span class="chapter-label mono">Chapter 03</span>
+      <h2 class="section-heading">Japan</h2>
+      <p class="japan-intro">
+        <!-- EDIT -->
+        Ten months. One scholarship. A hundred things I can't explain in English.
+      </p>
+    </div>
+
+    <!-- Stamp -->
+    <div class="japan-stamp" aria-hidden="true">日本</div>
+
+    <!-- Film strip — horizontal scroll -->
+    <div class="film-strip-wrap">
+      <div class="film-strip">
+
+        <div class="film-frame">
+          <!--
+            File: assets/images/japan-1.jpg
+            Caption will appear below on hover
+          -->
+          <img src="assets/images/japan-1.jpg" alt="" class="film-img" />
+          <!-- EDIT — your caption for this photo -->
+          <p class="film-caption handwritten">first day ✦</p>
+        </div>
+
+        <div class="film-frame">
+          <!-- File: assets/images/japan-2.jpg -->
+          <img src="assets/images/japan-2.jpg" alt="" class="film-img" />
+          <!-- EDIT -->
+          <p class="film-caption handwritten">konbini run at midnight</p>
+        </div>
+
+        <div class="film-frame">
+          <!-- File: assets/images/japan-3.jpg -->
+          <img src="assets/images/japan-3.jpg" alt="" class="film-img" />
+          <!-- EDIT -->
+          <p class="film-caption handwritten">Hiranuma HS</p>
+        </div>
+
+        <div class="film-frame">
+          <!-- File: assets/images/japan-4.jpg -->
+          <img src="assets/images/japan-4.jpg" alt="" class="film-img" />
+          <!-- EDIT -->
+          <p class="film-caption handwritten">somewhere in Yokohama</p>
+        </div>
+
+        <div class="film-frame">
+          <!-- File: assets/images/japan-5.jpg -->
+          <img src="assets/images/japan-5.jpg" alt="" class="film-img" />
+          <!-- EDIT -->
+          <p class="film-caption handwritten">last month</p>
+        </div>
+
+        <!-- ADD MORE FRAMES — copy a <div class="film-frame"> block -->
+
+      </div>
+    </div>
+
+    <div class="japan-blog-link">
+      <a href="https://aayu-chan-in-japan.vercel.app" class="btn-link mono" target="_blank" rel="noopener">
+        Read the Full Blog →
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CREATIVE — ink art / writing
+       IMAGES NEEDED:
+         assets/images/ink-1.jpg  through  ink-3.jpg
+         (photos of your Micron pen illustrations)
+  ============================================================ -->
+  <section class="creative" id="creative">
+    <div class="creative-inner">
+      <span class="chapter-label mono">Creative Practice</span>
+      <h2 class="section-heading">Ink & Words</h2>
+
+      <div class="ink-grid">
+
+        <div class="ink-piece">
+          <!--
+            File: assets/images/ink-1.jpg
+            One of your Micron pen drawings
+          -->
+          <img src="assets/images/ink-1.jpg" alt="Ink illustration" class="ink-img" />
+          <!-- EDIT — title of this piece / series name -->
+          <p class="ink-label mono">untitled, 2024</p>
+        </div>
+
+        <div class="ink-piece">
+          <!-- File: assets/images/ink-2.jpg -->
+          <img src="assets/images/ink-2.jpg" alt="Ink illustration" class="ink-img" />
+          <!-- EDIT -->
+          <p class="ink-label mono">micron on cartridge</p>
+        </div>
+
+        <div class="ink-piece">
+          <!-- File: assets/images/ink-3.jpg -->
+          <img src="assets/images/ink-3.jpg" alt="Ink illustration" class="ink-img" />
+          <!-- EDIT -->
+          <p class="ink-label mono">manga study</p>
+        </div>
+
+      </div>
+
+      <p class="creative-note">
+        <!-- EDIT — something about your creative practice -->
+        I draw with Micron pens. Manga-influenced, ink-heavy, usually late at night.
+        Find more on <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a>.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="chapter-label mono">Chapter 04</span>
+      <h2 class="section-heading">Let's Talk</h2>
+      <p class="contact-body">
+        <!-- EDIT -->
+        Research collabs, writing projects, creative chaos, or just saying hi.
+      </p>
+
+      <div class="contact-links mono">
+        <!-- EDIT — replace with your actual links -->
+        <a href="mailto:your@email.com">your@email.com</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://ayachisamyal.vercel.app" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER + OMIKUJI EASTER EGG
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-omikuji">
+      <button class="omikuji-btn" id="omikujiBtn" aria-label="Pull a fortune">
+        <span class="mono">おみくじ — pull your fortune</span>
+      </button>
+      <p class="omikuji-result mono" id="omikujiResult" aria-live="polite"></p>
+    </div>
+    <p class="footer-credit mono">
+      <!-- EDIT -->
+      Made by Ayachi. Yes, by hand. © 2025
+    </p>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
